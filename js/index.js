@@ -1,4 +1,4 @@
-/*const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -8,16 +8,31 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?' , ''),
-      b = prompt('На сколько его оцените?', ''),
-      c = prompt('Один из последних просмотренных фильмов?' , ''),
-      d = prompt('На сколько его оцените?', '');
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один из последних просмотренных фильмов?' , ''),
+          b = prompt('На сколько его оцените?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+    if (a != null && b != null && a != '' && b != "" && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log("error");
+        i--;
+    }   
+}
 
 console.log(personalMovieDB);
-*/
+
+if (personalMovieDB.count < 10) {
+    console.log("weak");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("not bad");
+} else if (personalMovieDB.count >= 30) {
+    console.log("tough guy");
+} else  {
+    console.log("no way!!!")};
+
+    
 
 /*if(4 == 9) {
     console.log('ok!');
@@ -51,9 +66,9 @@ switch (num) {
         console.log("not this time");
         break;
 }*/
-let num = 50;
+/*let num = 50;
 
-/*while (num <= 55) {
+while (num <= 55) {
     console.log(num);
     num++;
 }*/
@@ -64,11 +79,11 @@ let num = 50;
 }
 while (num < 55);*/
 
-for (let i = 1; i < 18; i++) {
+/*for (let i = 1; i < 18; i++) {
     if (i === 5) {
-        /*break;*/
+        break;
         continue;
     
     }
     console.log(i);
-}
+}*/
