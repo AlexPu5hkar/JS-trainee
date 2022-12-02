@@ -1,4 +1,4 @@
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+/*const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -17,3 +17,37 @@ personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
+*/
+
+/*if(4 == 9) {
+    console.log('ok!');
+} else {
+    console.log('are you mad?');
+}*/
+
+/*const num = 50;
+
+if (num < 40) {
+    console.log('error');
+} else if (num > 100) {
+    console.log('too much');
+} else {
+    console.log('ok!');
+}
+
+(num === 51) ? console.log('oK!!') : console.log('error');*/
+
+
+const num = 50
+
+switch (num) {
+    case 49: console.log("false");
+        break;
+    case 149: console.log("false");
+        break;
+    case 50: console.log("Yup!!");
+        break;
+    default:
+        console.log("not this time");
+        break;
+}
