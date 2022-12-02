@@ -70,3 +70,7 @@ console.log(incr == decr);
       isClose = true;
 
 console.log(isChecked || !isClose);*/
+ const user = "Alex",
+        age = "37";
+
+console.log(age, user);
