@@ -35,7 +35,7 @@ if (personalMovieDB.count < 10) {
     console.log("no way!!!");
 }*/
 
-let num = 20;
+/*let num = 20;
 
 function showFirstMessage(text) {
     console.log('hello world');
@@ -72,4 +72,32 @@ logger();
 const calc = (a, b) => {
     console.log('1');
     return a + b;
-};
+};*/
+
+const str = "test jDFGRgyDFfguFfb";
+/*const arr = [1, 1, 2, 5, 5, 6, 7, 9];*/
+
+/*console.log(str.length);*/
+/*console.log(arr.length);*/
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit"));
+
+const logg = "all animals are equal";
+
+console.log(logg.slice(0, 12));
+
+console.log(logg.substring (12, 15));
+
+console.log(logg.substr(16, 6));
+
+const num = 15.45;
+console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
