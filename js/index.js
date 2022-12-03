@@ -1,4 +1,6 @@
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+"useStrict";
+
+/*const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -30,60 +32,44 @@ if (personalMovieDB.count < 10) {
 } else if (personalMovieDB.count >= 30) {
     console.log("tough guy");
 } else  {
-    console.log("no way!!!")};
-
-    
-
-/*if(4 == 9) {
-    console.log('ok!');
-} else {
-    console.log('are you mad?');
+    console.log("no way!!!");
 }*/
 
-/*const num = 50;
+let num = 20;
 
-if (num < 40) {
-    console.log('error');
-} else if (num > 100) {
-    console.log('too much');
-} else {
-    console.log('ok!');
+function showFirstMessage(text) {
+    console.log('hello world');
+    let num = 30;
+    console.log(num);
+}
+console.log(num);
+showFirstMessage();
+
+function calc(a, b) {
+    return (a + b / 2);
 }
 
-(num === 51) ? console.log('oK!!') : console.log('error');*/
+console.log(calc(4, 8));
+console.log(calc(6, 22));
+console.log(calc(9, 4));
+console.log(calc(2, 54));
 
-
-/*const num = 50
-
-switch (num) {
-    case 49: console.log("false");
-        break;
-    case 149: console.log("false");
-        break;
-    case 50: console.log("Yup!!");
-        break;
-    default:
-        console.log("not this time");
-        break;
-}*/
-/*let num = 50;
-
-while (num <= 55) {
-    console.log(num);
-    num++;
-}*/
-
-/*do {
-    console.log(num);
-    num++;
+function ret() {
+    let num = 50;
+    return num;
 }
-while (num < 55);*/
 
-/*for (let i = 1; i < 18; i++) {
-    if (i === 5) {
-        break;
-        continue;
-    
-    }
-    console.log(i);
-}*/
+const anotherNum = ret();
+console.log(anotherNum);
+
+
+const logger = function() {
+console.log("hello");
+};
+
+logger();
+
+const calc = (a, b) => {
+    console.log('1');
+    return a + b;
+};
