@@ -71,6 +71,14 @@ function writeYourGenres() {
 
 writeYourGenres();
 
+
+
+
+
+
+
+
+
 /*let num = 20;
 
 function showFirstMessage(text) {
@@ -137,3 +145,27 @@ console.log(Math.round(num));
 const test = "12.2px";
 console.log(parseInt(test));
 console.log(parseFloat(test));*/
+
+function first() {
+    setTimeout(function() {
+        console.log(1)
+    }, 500);
+}    
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log(`I learning: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log('I finashed this lesson');
+}
+
+learnJS('JavaScript', done);
