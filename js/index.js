@@ -146,7 +146,7 @@ const test = "12.2px";
 console.log(parseInt(test));
 console.log(parseFloat(test));*/
 
-function first() {
+/*function first() {
     setTimeout(function() {
         console.log(1)
     }, 500);
@@ -160,7 +160,7 @@ first();
 second();
 
 function learnJS(lang, callback) {
-    console.log(`I learning: ${lang}`);
+    console.log(`I am learning: ${lang}`);
     callback();
 }
 
@@ -168,4 +168,44 @@ function done() {
     console.log('I finashed this lesson');
 }
 
-learnJS('JavaScript', done);
+learnJS('JavaScript', done);*/
+
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log("Test");
+    }
+};
+
+options.makeTest();
+
+const {border, bg} = options.colors;
+console.log(border);
+
+/*console.log(Object.keys(options).length);*/
+
+/*console.log(options.width);
+
+delete options.name;
+
+console.log(options);*/
+/*let counter = 0;
+for (let key in options) {
+    if (typeof(options [key]) === 'object') {
+        for (let i in options[key]) {
+            console.log(`Свойство ${i} имеет значение ${options[key] [i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+        
+    }
+    counter++;
+}
+console.log(counter);*/
