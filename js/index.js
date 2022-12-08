@@ -209,3 +209,30 @@ for (let key in options) {
     counter++;
 }
 console.log(counter);*/
+
+const arr = [12, 55, 84, 95, 26, 37];
+
+arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
+}
+/*arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} Inside the massive ${arr}`);
+});*/
+
+/*arr[99] = 0;
+console.log(arr.length);
+console.log(arr);*/
+/*arr.pop();*/
+/*arr.push(21);*/
+
+/*console.log(arr);*/
+
+/*for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}*/
+
+for (let value of arr) {
+    console.log(value);
+}
