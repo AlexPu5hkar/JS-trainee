@@ -171,7 +171,7 @@ function done() {
 learnJS('JavaScript', done);*/
 
 
-const options = {
+/*const options = {
     name: 'test',
     width: 1024,
     height: 1024,
@@ -187,7 +187,7 @@ const options = {
 options.makeTest();
 
 const {border, bg} = options.colors;
-console.log(border);
+console.log(border);*/
 
 /*console.log(Object.keys(options).length);*/
 
@@ -210,13 +210,13 @@ for (let key in options) {
 }
 console.log(counter);*/
 
-const arr = [12, 55, 84, 95, 26, 37];
+/*const arr = [12, 55, 84, 95, 26, 37];
 
 arr.sort(compareNum);
 
 function compareNum(a, b) {
     return a - b;
-}
+}*/
 /*arr.forEach(function(item, i, arr) {
     console.log(`${i}: ${item} Inside the massive ${arr}`);
 });*/
@@ -233,6 +233,99 @@ console.log(arr);*/
     console.log(arr[i]);
 }*/
 
-for (let value of arr) {
+/*for (let value of arr) {
     console.log(value);
+}*/
+
+/*let a = 5;
+    b = a;
+
+b = b + 5; 
+
+console.log(a);
+console.log(b);
+
+const obj = {
+    a : 5,
+    b : 1
+};
+
+const copy = obj;
+
+copy.a = 10;
+
+console.log(copy);
+console.log(obj);*/
+
+function copy(mainObj) {
+    let objCopy = {};
+
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj [key];
+    }
+
+    return objCopy;
 }
+
+const numbers = {
+   a: 2,
+   b: 5,
+   c: {
+        x: 7,
+        y: 4
+   } 
+};
+
+const newNumbers = copy(numbers);
+
+newNumbers.a = 10;
+
+/*console.log(newNumbers);
+console.log(numbers);*/
+
+const add = {
+    d: 17,
+    e: 20
+};
+
+const clone = Object.assign({}, add);
+
+clone.d =20;
+
+/*console.log(add);
+console.log(clone);*/
+
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice();
+
+newArray[2] = 'jhdbjhdjhd';
+console.log(newArray);
+console.log(oldArray);
+
+const video = ['youTube', 'vimeo', 'rutube'],
+      blogs = ['wordpress', 'livejounal', 'blogger'],
+      internet = [ ...video, 'fb', ...blogs, 'instagram'];
+      
+console.log(internet);
+
+function log(a, b, c) {    
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+const num = [5, 6, 4];
+
+log(...num);
+
+const array = ['a', 'b'];
+
+const newArray = [...array];
+
+
+const q = { 
+    one: 45,
+    two: 75
+};
+
+const newObj = {...q};
