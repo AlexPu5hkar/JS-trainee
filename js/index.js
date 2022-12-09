@@ -1,6 +1,6 @@
 "useStrict";
 
-let numberOfFilms;
+/*let numberOfFilms;
 
 function start() {
     numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
@@ -37,10 +37,6 @@ function rememberMyFilms() {
     }
 }
 
-/*rememberMyFilms();*/
-
-
-
 function detectMyPersonalLevel() {
     if (personalMovieDB.count < 10) {
         console.log("weak");
@@ -53,7 +49,6 @@ function detectMyPersonalLevel() {
     }
 }
 
-/*detectMyPersonalLevel();*/
 
 function  showMyDB(hidden) {
     if(!hidden) {
@@ -69,7 +64,9 @@ function writeYourGenres() {
     }
 }
 
-writeYourGenres();
+writeYourGenres();/
+
+
 
 
 
@@ -257,7 +254,7 @@ copy.a = 10;
 console.log(copy);
 console.log(obj);*/
 
-function copy(mainObj) {
+/*function copy(mainObj) {
     let objCopy = {};
 
     let key;
@@ -279,24 +276,24 @@ const numbers = {
 
 const newNumbers = copy(numbers);
 
-newNumbers.a = 10;
+newNumbers.a = 10;*/
 
 /*console.log(newNumbers);
 console.log(numbers);*/
 
-const add = {
+/*const add = {
     d: 17,
     e: 20
 };
 
 const clone = Object.assign({}, add);
 
-clone.d =20;
+clone.d =20;*/
 
 /*console.log(add);
 console.log(clone);*/
 
-const oldArray = ['a', 'b', 'c'];
+/*const oldArray = ['a', 'b', 'c'];
 const newArray = oldArray.slice();
 
 newArray[2] = 'jhdbjhdjhd';
@@ -328,4 +325,29 @@ const q = {
     two: 75
 };
 
-const newObj = {...q};
+const newObj = {...q};*/
+
+
+let str = 'some';
+let strObj = new String(str);
+
+console.dir([1, 2, 3]);
+
+const soldier = {
+    health: 400,
+    armor: 150,
+    sayHello: function() {
+        console.log('hello');
+    }
+};
+
+const john = Object.create(soldier);
+
+/*const john = {
+    halth: 100
+};*/
+
+/*john.__proto__  = soldier;
+Object.setPrototypeOf(john, soldier);*/
+/*console.log(john.armor);*/
+john.sayHello();
