@@ -60,10 +60,24 @@ const personalMovieDB = {
             } else {
                 personalMovieDB.genres[i - 1] = genre;
             }
+
+            /*for (let i = 1; i <= 2; i++) {
+                let genres = prompt(`Любимые жанры через запятую`);
+    
+                if (genres === '' || genres == null) {
+                    console.log('Wrong answer or didnt ansver');
+                    i--;
+                } else {
+                    personalMovieDB.genres = genres.split(', ');
+                    personalMovieDB.genres.sort();
+                }*/
+
         } 
+
 
         personalMovieDB.genres.forEach((item, i) => {
             console.log(`Favorite Genre ${i + 1} - is ${item}`);
+            
         });
     }
 };
