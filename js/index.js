@@ -1,70 +1,72 @@
 "useStrict";
 
-/*let numberOfFilms;
-
-function start() {
-    numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
-
-    while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-        numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
-    }
-}
-
-start();
-
 const personalMovieDB = {
-    count: numberOfFilms,
+    count: 0,
     movies: {},
     actors: {},
     genres: [],
-    private: false
-};
-
-
-
-function rememberMyFilms() {
-    for (let i = 0; i < 2; i++) {
-        const a = prompt('Один из последних просмотренных фильмов?' , ''),
-              b = prompt('На сколько его оцените?', '');
+    private: false,
+    start: function() {
+        personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели?", '');
     
-        if (a != null && b != null && a != '' && b != "" && a.length < 50) {
-            personalMovieDB.movies[a] = b;
-            console.log('done');
+        while (personalMovieDB.count == "" || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+            personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели?", '');
+        }
+    },
+    rememberMyFilms: function() {
+        for (let i = 0; i < 2; i++) {
+            const a = prompt('Один из последних просмотренных фильмов?' , ''),
+                  b = prompt('На сколько его оцените?', '');
+        
+            if (a != null && b != null && a != '' && b != "" && a.length < 50) {
+                personalMovieDB.movies[a] = b;
+                console.log('done');
+            } else {
+                console.log("error");
+                i--;
+            }   
+        }
+    },
+    detectMyPersonalLevel: function() {
+        if (personalMovieDB.count < 10) {
+            console.log("weak");
+        } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+            console.log("not bad");
+        } else if (personalMovieDB.count >= 30) {
+            console.log("tough guy");
+        } else  {
+            console.log("no way!!!");
+        }
+    },
+    showMyDB: function(hidden) {
+        if(!hidden) {
+            console.log(personalMovieDB);
+        }
+    },
+    toggleVisibleMyDB: function() {
+        if (personalMovieDB.private) {
+            personalMovieDB.private = false;
         } else {
-            console.log("error");
-            i--;
-        }   
+            personalMovieDB.private = true;
+        }
+    },
+    writeYourGenres: function() {
+        for (let i = 1; i <= 3; i++) {
+            let genre = prompt(`Your favorite genre number ${i}`);
+
+            if (genre === '' || genre == null) {
+                console.log('Wrong answer or didnt ansver');
+                i--;
+            } else {
+                personalMovieDB.genres[i - 1] = genre;
+            }
+        } 
+
+        personalMovieDB.genres.forEach((item, i) => {
+            console.log(`Favorite Genre ${i + 1} - is ${item}`);
+        });
     }
-}
-
-function detectMyPersonalLevel() {
-    if (personalMovieDB.count < 10) {
-        console.log("weak");
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-        console.log("not bad");
-    } else if (personalMovieDB.count >= 30) {
-        console.log("tough guy");
-    } else  {
-        console.log("no way!!!");
-    }
-}
-
-
-function  showMyDB(hidden) {
-    if(!hidden) {
-        console.log(personalMovieDB);
-    }
-}
-
-showMyDB(personalMovieDB.private);
-
-function writeYourGenres() {
-    for (let i = 1; i <= 3; i++) {
-        personalMovieDB.genres[i - 1] = prompt(`Your favorite genre number ${i}`);
-    }
-}
-
-writeYourGenres();/
+};
 
 
 
@@ -328,7 +330,7 @@ const q = {
 const newObj = {...q};*/
 
 
-let str = 'some';
+/*let str = 'some';
 let strObj = new String(str);
 
 console.dir([1, 2, 3]);
@@ -341,7 +343,7 @@ const soldier = {
     }
 };
 
-const john = Object.create(soldier);
+const john = Object.create(soldier);*/
 
 /*const john = {
     halth: 100
@@ -350,4 +352,4 @@ const john = Object.create(soldier);
 /*john.__proto__  = soldier;
 Object.setPrototypeOf(john, soldier);*/
 /*console.log(john.armor);*/
-john.sayHello();
+/*john.sayHello();*/
