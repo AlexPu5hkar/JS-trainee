@@ -1,6 +1,6 @@
 "useStrict";
 
-const personalMovieDB = {
+/*const personalMovieDB = {
     count: 0,
     movies: {},
     actors: {},
@@ -61,17 +61,6 @@ const personalMovieDB = {
                 personalMovieDB.genres[i - 1] = genre;
             }
 
-            /*for (let i = 1; i <= 2; i++) {
-                let genres = prompt(`Любимые жанры через запятую`);
-    
-                if (genres === '' || genres == null) {
-                    console.log('Wrong answer or didnt ansver');
-                    i--;
-                } else {
-                    personalMovieDB.genres = genres.split(', ');
-                    personalMovieDB.genres.sort();
-                }*/
-
         } 
 
 
@@ -82,16 +71,51 @@ const personalMovieDB = {
     }
 };
 
+*/
 
 
 
 
 
 
+to string
+console.log(typeof(String(null)));
+console.log(String(null));
+console.log(typeof(String(65)));
 
+console.log(typeof(5 + ''));
+console.log(typeof(null + ''));
 
+const num = 5;
 
+console.log("https://vk.com/catalog/" + num);
 
+const fontSize = 25 + "px";
+
+to number
+console.log(typeof(Number('5')));
+console.log(typeof(+ "65"));
+console.log(typeof(parseInt("54px", 10)));
+
+let answ = +prompt("hi", "");
+
+to boolean
+
+ 0, '', null, undefined, Nan;
+
+ let switcher = null;
+
+ if (switcher) {
+    console.log('working...');
+ }
+
+switcher = 1;
+if (switcher) {
+    console.log('working...');
+}
+
+console.log(typeof(Boolean('65')));
+console.log(typeof(!!'651'));
 /*let num = 20;
 
 function showFirstMessage(text) {
