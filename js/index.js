@@ -1,6 +1,6 @@
 "useStrict";
 
-/*const personalMovieDB = {
+const personalMovieDB = {
     count: 0,
     movies: {},
     actors: {},
@@ -71,14 +71,13 @@
     }
 };
 
-*/
 
 
 
 
 
-
-to string
+/*
+//to string
 console.log(typeof(String(null)));
 console.log(String(null));
 console.log(typeof(String(65)));
@@ -92,14 +91,14 @@ console.log("https://vk.com/catalog/" + num);
 
 const fontSize = 25 + "px";
 
-to number
+//to number
 console.log(typeof(Number('5')));
 console.log(typeof(+ "65"));
 console.log(typeof(parseInt("54px", 10)));
 
 let answ = +prompt("hi", "");
 
-to boolean
+//to boolean
 
  0, '', null, undefined, Nan;
 
@@ -115,7 +114,9 @@ if (switcher) {
 }
 
 console.log(typeof(Boolean('65')));
-console.log(typeof(!!'651'));
+console.log(typeof(!!'651'));*/
+
+
 /*let num = 20;
 
 function showFirstMessage(text) {
