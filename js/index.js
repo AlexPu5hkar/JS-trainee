@@ -71,20 +71,32 @@ const personalMovieDB = {
     } 
 };
 
-const btn = document.querySelector('button');
-
-let i = 0;
+const btn = document.querySelectorAll('button');
+      overlay = document.querySelector('.overlay');
+//let i = 0;
 const deleteEl = (e) => {
    console.log(e.target);
-   i++;
+   console.log(e. type);
+   /*i++;
    if (i == 1) {
     btn.removeEventListener('click', deleteEl);
    }
+};*/
 };
+/*btn.addEventListener('click', deleteEl);
+overlay.addEventListener('click', deleteEl);*/
 
-btn.addEventListener('click', deleteEl);
+btn.forEach(btn => {
+    btn.addEventListener('click', deleteEl);
+});
 
+const link = document.querySelector('a');
 
+link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    console.log(e.target);
+});
 
 /*btn.addEventListener('click', (e) => {
     console.log(e.target);
