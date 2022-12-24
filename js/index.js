@@ -68,11 +68,34 @@ const personalMovieDB = {
             console.log(`Favorite Genre ${i + 1} - is ${item}`);
             
         });
-    }
+    } 
 };
 
+const btn = document.querySelector('button');
+
+let i = 0;
+const deleteEl = (e) => {
+   console.log(e.target);
+   i++;
+   if (i == 1) {
+    btn.removeEventListener('click', deleteEl);
+   }
+};
+
+btn.addEventListener('click', deleteEl);
 
 
+
+/*btn.addEventListener('click', (e) => {
+    console.log(e.target);
+    e.target.remove();
+});*/
+
+/*const btn = document.querySelector('button')
+
+btn.onclick = function() {
+    alert('click');
+};*/
 
 
 
