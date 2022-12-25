@@ -1,6 +1,6 @@
 'use strict';
 
-const box = document.getElementById('box'),
+/*const box = document.getElementById('box'),
       btns = document.getElementsByTagName('button'),
       circles = document.getElementsByClassName('circle'),
       hearts = document.querySelectorAll('.heart'),
@@ -23,7 +23,7 @@ btns[1].style.cssText  = 'background-color: #127646';
     hearts[i].style.backgroundColor = 'blue';
 } */
 
-hearts.forEach(item => {
+/*hearts.forEach(item => {
     item.style.backgroundColor = 'grey';
 });
 
@@ -52,4 +52,26 @@ div.innerHTML = "<h1>Hey!!</h1>";
 
 //div.textContent = "<h1>HELLO</h1>";
 
-div.insertAdjacentHTML("afterend", '<h1>Hey!!</h1>');
+div.insertAdjacentHTML("afterend", '<h1>Hey!!</h1>');*/
+
+
+//console.log(document.head);
+//console.log(document.documentElement);
+//console.log(document.body.childNodes);
+//console.log(document.body.firstChild);
+//console.log(document.body.firstElementChild);
+//console.log(document.body.lastChild);
+
+//console.log(document.querySelector('#current').parentNode.parentNode);
+//console.log(document.querySelector('#current').parentNode.parentElement);
+
+
+//console.log(document.querySelector('[data-current="3"]').nextElementSibling);
+//console.log(document.querySelector('[data-current="3"]').previousSibling);
+
+for (let node of document.body.childNodes) {
+    if (node.nodeName == '#text') {
+        continue;
+    }
+    console.log(node);
+}
